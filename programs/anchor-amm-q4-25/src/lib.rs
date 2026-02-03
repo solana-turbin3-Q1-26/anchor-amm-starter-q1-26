@@ -5,7 +5,7 @@ mod instructions;
 mod state;
 
 use instructions::*;
-declare_id!("9FVkz5L9LZix4zXYmqJLzKBwRpm9aJ539J26UsZSrLWN");
+declare_id!("E6TLXLjGbP1TorZqNCc6pfEgaRYwwpk7X1diyYJnpTZR");
 
 #[program]
 pub mod anchor_amm_q4_25 {
@@ -24,8 +24,8 @@ pub mod anchor_amm_q4_25 {
         ctx.accounts.deposit(amount, max_x, max_y)
     }
 
-    pub fn withdraw(ctx: Context<Withdraw>, amount: u64, max_x: u64, max_y: u64) -> Result<()> {
-        ctx.accounts.withdraw(amount, max_x, max_y)
+    pub fn withdraw(ctx: Context<Withdraw>, amount: u64, min_x: u64, min_y: u64) -> Result<()> {
+        ctx.accounts.withdraw(amount, min_x, min_y)
     }
 
     pub fn swap(ctx: Context<Swap>, is_x: bool, amount_in: u64, min_amount_out: u64) -> Result<()> {

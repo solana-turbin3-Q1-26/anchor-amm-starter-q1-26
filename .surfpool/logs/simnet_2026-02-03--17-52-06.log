@@ -1,0 +1,26 @@
+[2026-02-03--17-52-06 INFO actix_server::builder] starting 5 workers
+[2026-02-03--17-52-06 INFO actix_server::server] Tokio runtime found; starting in existing Tokio runtime
+[2026-02-03--17-52-06 INFO actix_server::server] starting service: "actix-web-service-127.0.0.1:18488", workers: 5, listening on: 127.0.0.1:18488
+[2026-02-03--17-52-07 INFO parity_ws] Listening for new connections on 127.0.0.1:8900.
+[2026-02-03--17-52-09 INFO txtx::svm::deploy_program] [Recovery Instructions] - An ephemeral authority account will be created and funded to write to the buffer account.
+[2026-02-03--17-52-09 INFO txtx::svm::deploy_program] [Recovery Instructions] - Please save the following information in case the deployment fails and the account needs to be recovered:
+[2026-02-03--17-52-09 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority public key: 4iK2xZxu9KVxyYT35x5PLTfUtCGRn85ubzvrwgNx7dbu
+[2026-02-03--17-52-09 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority secret key: [180, 217, 18, 15, 128, 197, 248, 87, 128, 212, 180, 187, 221, 248, 2, 229, 209, 101, 9, 166, 127, 64, 92, 30, 235, 238, 227, 81, 37, 192, 131, 164, 55, 40, 67, 201, 45, 101, 27, 143, 238, 142, 198, 211, 248, 213, 182, 179, 111, 226, 103, 86, 252, 160, 104, 209, 217, 62, 33, 249, 15, 249, 4, 56]
+[2026-02-03--17-52-10 INFO txtx::svm::deploy_program] Account Created - Ephemeral authority account created and funded to write to buffer
+[2026-02-03--17-52-10 INFO txtx::svm::deploy_program] [Recovery Instructions] - Creating program buffer account at pubkey Ba5AWz9NqfZoSeSqzbJmGaJby2tLSV3bMZ417SHSnr3G
+[2026-02-03--17-52-10 INFO txtx::svm::deploy_program] Account Created - Program buffer account created
+[2026-02-03--17-52-18 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:45976.
+[2026-02-03--17-52-22 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:52508.
+[2026-02-03--17-52-26 INFO txtx::svm::deploy_program] Buffer Ready - Writing to buffer account is complete
+[2026-02-03--17-52-26 ERROR txtx::svm::send_transaction] Failed - Failed to broadcast transaction
+[2026-02-03--17-52-26 ERROR txtx::svm::send_transaction] Failed - error: unable to send and confirm transaction (RPC response error -32002: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x0: 3 log messages:
+Program 11111111111111111111111111111111 invoke [1]
+Create Account: account Address { address: E6TLXLjGbP1TorZqNCc6pfEgaRYwwpk7X1diyYJnpTZR, base: None } already in use
+Program 11111111111111111111111111111111 failed: custom program error: 0x0; 3 log messages:
+  Program 11111111111111111111111111111111 invoke [1]
+  Create Account: account Address { address: E6TLXLjGbP1TorZqNCc6pfEgaRYwwpk7X1diyYJnpTZR, base: None } already in use
+  Program 11111111111111111111111111111111 failed: custom program error: 0x0
+)
+[2026-02-03--17-52-28 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:52520.
+[2026-02-03--17-52-29 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:52526.
+[2026-02-03--17-52-30 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:35736.
